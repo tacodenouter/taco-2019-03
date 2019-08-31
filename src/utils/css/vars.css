@@ -1,24 +1,34 @@
-/* Variables
-/* ---------------------------------------------------------- */
+@font-face {font-family: 'Fabrikat-Regular';src: url('fonts/315D63_0_0.eot');src: url('fonts/315D63_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/315D63_0_0.woff2') format('woff2'),url('fonts/315D63_0_0.woff') format('woff'),url('fonts/315D63_0_0.ttf') format('truetype');}
 
-@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,600,700,700i,800&display=swap');
+@font-face {font-family: 'Gopher-Medium';src: url('fonts/39F4B2_0_0.eot');src: url('fonts/39F4B2_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/39F4B2_0_0.woff2') format('woff2'),url('fonts/39F4B2_0_0.woff') format('woff'),url('fonts/39F4B2_0_0.ttf') format('truetype');}
+
+@font-face {font-family: 'NeumaticCompressed-Bold';src: url('fonts/39F4B2_1_0.eot');src: url('fonts/39F4B2_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/39F4B2_1_0.woff2') format('woff2'),url('fonts/39F4B2_1_0.woff') format('woff'),url('fonts/39F4B2_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'Recoleta-RegularDEMO';src: url('fonts/39F5DC_0_0.eot');src: url('fonts/39F5DC_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/39F5DC_0_0.woff2') format('woff2'),url('fonts/39F5DC_0_0.woff') format('woff'),url('fonts/39F5DC_0_0.ttf') format('truetype');}
+
 
 :root {
-
     /* Colours */
-    --color-primary: #3eb0ef;
-    --color-base: #131313;
+    --color-primary: rgb(80, 3, 255);
+    --color-base: #000;
+    --color-grey: #666;
     --color-border: #ddd;
     --color-bg: #f8f8f8;
 
-    /* Fonts */
-    --font-sans-serif: 'Muli', sans-serif;
+    /* /fonts */
+    --font-body: 'Fabrikat-Regular', sans-serif;
+    --font-header-1: 'Recoleta-RegularDEMO', sans-serif;
+    --font-header-2: 'NeumaticCompressed-Bold', sans-serif;
+    --font-header-3: 'Gopher-Medium', sans-serif;
+    --font-sans-serif: 'Fabrikat-Regular', sans-serif;
     --font-serif: Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
     --font-normal: 400;
     --font-bold: 700;
     --font-heavy: 800;
+    --letter-spacing: 0.3rem;
 
     /* Breakpoints */
     --xlarge: 1680px;

@@ -18,14 +18,17 @@ const BlogIndex = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[`Product Design`, `UI Design`, `UX Design`, `Branding`, `Illustration`, `Digital Design`, `Taco den Outer`, `Taco`, `Hi Mum Said Dad`, `Kindeo`, `Dash Audio`, `Dave's Lab`, `iOS Design`, `App Design`, `Interaction Design`, `Digital Strategy`, `Usability`, `User Experience`, `User Interface Design`]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
         <header className="page-head">
-          <h2 className="page-head-title">
+          {/* <h2 className="page-head-title">
             {data.site.siteMetadata.description}
-          </h2>
+          </h2> */}
+          <h1>PURPOSEFUL PROTOTYPING</h1>
+          <p>👋 Hi, I design apps and websites for companies large and small</p>
+          <p>↓</p>
         </header>
       )}
       <div className="post-feed">

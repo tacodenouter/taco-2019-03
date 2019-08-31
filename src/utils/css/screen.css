@@ -25,10 +25,11 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* ---------------------------------------------------------- */
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: var(--font-body);
     background: var(--color-bg);
     transition: background 0.3s ease-out;
     transition-delay: 0.25;
+    font-size: 3rem;
 }
 
 .img {
@@ -65,7 +66,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 13vw 0;
+    padding: 8vw 0;
     max-width: 70%;
     margin: auto;
     text-align: center;
@@ -101,9 +102,10 @@ body {
     font-size: 4.2rem;
     color: var(--color-base);
 }
-@media (max-width: 500px) {
-    .page-head-title {
+@media (max-width: 670px) {
+    .page-head {
         font-size: 2rem;
+        padding: 14vw 0 0 0;
     }
 }
 
@@ -113,7 +115,7 @@ body {
     font-size: 2.2rem;
     line-height: 1.35em;
 }
-@media (max-width: 500px) {
+@media (max-width: 670px) {
     .page-head-description {
         font-size: 1.6rem;
     }
@@ -138,7 +140,9 @@ body {
     position: relative;
     z-index: 300;
     margin-top: -10px;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
 }
 
 .site-head-container {
@@ -201,7 +205,7 @@ body {
     line-height: 1em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing);
 }
 
 .site-head-logo:hover {
@@ -434,7 +438,7 @@ body {
     bottom: 0;
     left: 0;
     color: #fff;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.6);
     opacity: 1;
     transition: opacity 0.5s cubic-bezier(.33,0,.2,1);
 }
@@ -519,9 +523,18 @@ body {
 }
 
 .post-content-title {
+    font-family: var(--font-header-1);
     margin: 0 0 3vw;
     color: var(--color-base);
     text-align: center;
+    font-size: 10rem;
+}
+
+@media (max-width: 670px) {
+    .post-content-title {
+        font-size: 6rem;
+        margin-top: 4rem;
+    }
 }
 
 .post-content-excerpt {
@@ -530,9 +543,8 @@ body {
     line-height: 1.6em;
     color: var(--color-base);
     text-align: center;
-    opacity: 0.5;
 }
-@media (max-width: 500px) {
+@media (max-width: 670px) {
     .post-content-excerpt {
         font-size: 1.8rem;
     }
@@ -552,20 +564,12 @@ body {
     font-size: 1.9rem;
     line-height: 1.65em;
 }
-@media (max-width: 500px) {
+@media (max-width: 670px) {
     .post-content-body {
         font-size: 1.7rem;
     }
 }
 
-.post-content-body h1,
-.post-content-body h2,
-.post-content-body h3,
-.post-content-body h4,
-.post-content-body h5,
-.post-content-body h6 {
-    color: var(--color-base);
-}
 
 .post-content-body li {
     word-break: break-word;
@@ -582,7 +586,7 @@ body {
 .post-content-body blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    border-left: var(--color-primary) 3px solid;
 }
 
 .post-content-body blockquote p {
@@ -590,7 +594,6 @@ body {
     color: inherit;
     font-size: inherit;
     line-height: inherit;
-    font-style: italic;
 }
 
 .post-content-body blockquote p:last-child {
@@ -717,5 +720,7 @@ body {
 .page-template .post-content-body h1,
 .page-template .post-content-body h2,
 .page-template .post-content-body h3 {
-    text-align: center;
+    text-align: left;
+    font-family: var(--font-header-3);
+    font-weight: 800;
 }

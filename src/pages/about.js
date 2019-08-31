@@ -13,20 +13,28 @@ const AboutPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="ABout" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
+      <SEO title="About" keywords={[`Product Design`, `UI Design`, `UX Design`, `Branding`, `Illustration`, `Digital Design`, `Taco den Outer`, `Taco`, `Hi Mum Said Dad`, `Kindeo`, `Dash Audio`, `Dave's Lab`, `iOS Design`, `App Design`, `Interaction Design`, `Digital Strategy`, `Usability`, `User Experience`, `User Interface Design`]} />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
-            Clean, minimal, and deeply customisable. London is a theme made for
-            people who appreciate simple lines.
+          <h2 id="">
+            Hello!
           </h2>
+          <p>
+            I'm a Digital Product Designer with experience leading talented teams in London and Hong Kong. I work with ambitious startups, forward-thinking brands and bright agencies.
+          </p>
+          <p>
+            I'm excited by clear user journeys in a beautiful UI. I like to get to a high fidelity prototype quickly, so my go-to tool right now is Framer X, but I also use Sketch and straight HTML+CSS.
+          </p>
+          <p>
+            I have led design teams in London and Hong Kong, mainly client-side, but also at agencies. I like to think of myself as in between strategists and developers.
+          </p>
           <figure className="kg-card kg-image-card kg-width-full">
             <Img
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"
             />
-            <figcaption>Large imagery is at the heart of this theme</figcaption>
+            <figcaption>UI and UX design is my game, but I like illustration too</figcaption>
           </figure>
           <h3 id="dynamic-styles">Dynamic styles</h3>
           <p>
@@ -63,7 +71,7 @@ const indexQuery = graphql`
       }
     }
     benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
+      relativePath: { eq: "Figuring_Out_A_UI-wide.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
